@@ -1,0 +1,27 @@
+.center {
+	justify-content: center!important; 
+}
+
+.margin-right{
+	margin-right:0.2rem;
+}
+
+.navbar-nav>li, .navbar-nav {
+float: left !important;
+}
+
+.inline-block{
+	display:inline-block!important;
+}
+
+.width-100{
+	width: 100%;
+}
+
+.width-25{
+	width: 25%;
+}
+
+.padding-0{
+	padding: 0!important;
+}
