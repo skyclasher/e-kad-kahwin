@@ -3,15 +3,26 @@ import './section-1.css';
 
 export default function Section1() {
   return (
-	<div className="jumbotron">
-	<h1 className="display-3">Hello, world!</h1>
-	<p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-	<hr className="my-4" />
-	<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-	<p className="lead">
-	  <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-	</p>
-  </div>
+	<div className="section1 padding-100">
+		<div className="center-content">
+		<div className="image">
+			<img src="/assets/images/walimatulurus-jawi-black.svg" title="Walimtul Urus Jawi" alt="Walimtul Urus Jawi"></img>
+		</div>
+		<p className="walimatul-font font-type">Walimatul Urus</p>
+		<div className="image">
+			<img src="/assets/images/border-black.svg" title="Border Top" alt="Border Top"></img>
+		</div>
+		<h2 className="margin-top-20 name-font">Sulhi</h2>
+		<h2 className="name-font">&</h2>
+		<h2 className="name-font padding-top-40">Anisah</h2>
+		<div className="image margin-top-20">
+			<img src="/assets/images/border-bawah-black.svg" title="Border Bot" alt="Border Bot"></img>
+		</div>
+		<p className="margin-top-20">Sabtu</p>
+		<p>25 Januari 2020</p>
+		<p>29 Jamadil Awal 1441</p>
+		</div>
+  	</div>
   );
 }
 
