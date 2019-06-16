@@ -1,8 +1,8 @@
 .section1 {
-    background-image: url('../../../../assets/images/img4.png');
+    background-image: url('../../../../assets/images/img5.png');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: 100% 100%; 
     height: 900px;
 }
 
@@ -20,34 +20,9 @@
     padding: 125px 0 5px
 }
 
-.padding-top-40 {
-    padding-top: 40px
+.name-modifier {
+	margin-top: -25px;
+    margin-bottom: -25px;
 }
 
-.center-content {
-    width: 50%;
-    margin: 0 auto;
-}
 
-p {
-    font-family: "Questrial", Sans-serif;
-    font-size: 20px;
-}
-
-.walimatul-font {    
-    font-size: 25px;
-    font-weight: 100;
-    letter-spacing: 2px;
-    line-height: 50px;
-}
-
-.margin-top-20 {
-    margin-top: 20px;
-}
-
-.name-font {
-    font-family: "Dancing Script", cursive;
-    font-size: 70px;
-    color: #2C7575;
-    
-}

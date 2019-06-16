@@ -13,8 +13,8 @@ export default function Section1() {
 			<img src="/assets/images/border-black.svg" title="Border Top" alt="Border Top"></img>
 		</div>
 		<h2 className="margin-top-20 name-font">Sulhi</h2>
-		<h2 className="name-font">&</h2>
-		<h2 className="name-font padding-top-40">Anisah</h2>
+		<h2 className="name-font name-modifier">&</h2>
+		<h2 className="name-font">Anisah</h2>
 		<div className="image margin-top-20">
 			<img src="/assets/images/border-bawah-black.svg" title="Border Bot" alt="Border Bot"></img>
 		</div>
