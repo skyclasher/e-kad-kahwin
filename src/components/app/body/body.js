@@ -1,15 +1,15 @@
 import React from 'react';
-import Section1 from './section-1/section-1';
-import Section2 from './section-2/section-2';
+import Page1 from './page-1/page-1';
+import Page2 from './page-2/page-2';
 import './body.css';
 
 export default function Body() {
   return (
 	<div>
-		<Section1 />
-		<Section2 />
-		<Section1 />
-		<Section1 />
+		<Page1 />
+		<Page2 />
+		<Page1 />
+		<Page2 />
 	</div>
   );
 }

@@ -1,0 +1,226 @@
+.section2 p {
+	width: 230px!important;
+	font-size: 16px!important;
+	margin-bottom: 0;
+	margin-left: -10px;
+}
+
+.parent p {
+	font-family: "Caveat", cursive;
+	font-weight: bold;
+    font-size: 30px!important;
+    color: rgba(255, 122, 45, 0.788);
+}
+
+.parent-modifier {
+	margin-top: -15px;
+    margin-bottom: -15px!important;
+}
+
+.son {    
+    background-image: url('../../../../assets/images/nameplate.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    width: 320px;
+    margin-left: -53px;
+    height: 130px;
+    text-align: center;
+    display: -webkit-flex;
+    opacity: 0.8;
+    border-radius: 55px;
+}
+
+.son p {    
+	font-family: "Kaushan Script", cursive;
+    font-weight: normal;
+    font-size: 24px!important;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+
+.animatebg {
+  overflow: hidden;
+  height: 1150px;
+  position: relative;
+  background: linear-gradient(90deg, #ffe0e0, #ffe0ff );
+  background-size: 200% 200%;
+  -webkit-animation: animatebg ease 8s infinite;
+          animation: animatebg ease 8s infinite;
+}
+
+.bubbles {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  color: #fff;
+}
+
+li.animate {
+  position: absolute;
+  list-style: none;
+  display: block;
+  opacity: 0.2;
+  font-size: 4rem;
+  -webkit-animation: square linear 4s infinite;
+          animation: square linear 4s infinite;
+}
+
+li.animate:nth-child(1) {
+  left: 8.333333333333334%;
+  font-size: 15rem;
+  opacity: 0.1;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+li.animate:nth-child(5) {
+  left: 41.66666666666667%;
+  font-size: 3rem;
+  opacity: 0.1;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+li.animate:nth-child(9) {
+  left: 75%;
+  font-size: 1.666666666666667rem;
+  opacity: 0.1;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+li.animate:nth-child(2) {
+  left: 16.666666666666668%;
+  font-size: 8rem;
+  opacity: 0.05;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+li.animate:nth-child(6) {
+  left: 50%;
+  font-size: 8rem;
+  opacity: 0.05;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+li.animate:nth-child(10) {
+  left: 83.33333333333334%;
+  font-size: 8rem;
+  opacity: 0.05;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+li.animate:nth-child(3) {
+  left: 25%;
+  font-size: 6.666666666666666rem;
+  opacity: 0.08;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+li.animate:nth-child(7) {
+  left: 58.33333333333334%;
+  font-size: 2.857142857142857rem;
+  opacity: 0.08;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+li.animate:nth-child(11) {
+  left: 91.66666666666669%;
+  font-size: 1.818181818181818rem;
+  opacity: 0.08;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+li.animate:nth-child(4) {
+  left: 33.333333333333336%;
+  font-size: 8rem;
+  opacity: 0.05;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+li.animate:nth-child(8) {
+  left: 66.66666666666667%;
+  font-size: 16rem;
+  opacity: 0.05;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+li.animate:nth-child(12) {
+  left: 100%;
+  font-size: 24rem;
+  opacity: 0.05;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+@-webkit-keyframes animatebg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes animatebg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes square {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1);
+    top: 0;
+  }
+  50% {
+    -webkit-transform: rotate(180deg) scale(2);
+            transform: rotate(180deg) scale(2);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1);
+    top: -400px;
+  }
+}
+
+@keyframes square {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1);
+    top: 0;
+  }
+  50% {
+    -webkit-transform: rotate(180deg) scale(2);
+            transform: rotate(180deg) scale(2);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1);
+    top: -400px;
+  }
+}

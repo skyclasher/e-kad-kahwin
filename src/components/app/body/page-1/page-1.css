@@ -1,4 +1,4 @@
-.section1 {
+.page1 {
     background-image: url('../../../../assets/images/img5.png');
     background-position: center center;
     background-repeat: no-repeat;
@@ -6,23 +6,15 @@
     height: 900px;
 }
 
-.image {
-        height: auto;
-        max-width: 100%;
-        border: none;
-        -webkit-border-radius: 0;
-        border-radius: 0;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-}
-
-.padding-100 {
-    padding: 125px 0 5px
+.name-font {
+	font-family: "Allura", cursive;
+	font-weight:normal;
+    font-size: 70px;
+    color: #2C7575;
+    
 }
 
 .name-modifier {
 	margin-top: -25px;
     margin-bottom: -25px;
 }
-
-
