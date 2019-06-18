@@ -1,8 +1,10 @@
-.section2 p {
+.section2 {
 	width: 230px!important;
+}
+
+.section2 p {
 	font-size: 16px!important;
 	margin-bottom: 0;
-	margin-left: -10px;
 }
 
 .parent p {
@@ -22,13 +24,13 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% 100%; 
-    width: 320px;
-    margin-left: -53px;
+    width: 140%;
     height: 130px;
     text-align: center;
     display: -webkit-flex;
     opacity: 0.8;
     border-radius: 55px;
+    margin-left: -20%;
 }
 
 .son p {    
@@ -39,6 +41,7 @@
     display: inline-block;
     margin: auto;
     text-align: center;
+	width: 230px!important;
 }
 
 .animatebg {

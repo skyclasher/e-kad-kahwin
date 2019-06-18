@@ -1,6 +1,6 @@
 import React from 'react';
 
-let SectionMiddle = () => {
+let sectionMiddle = () => {
   	return (
 	  	<>
 			<h2 className="margin-top-20 name-font">Sulhi</h2>
@@ -10,5 +10,5 @@ let SectionMiddle = () => {
   );
 }
 
-export default SectionMiddle;
+export default sectionMiddle;
 

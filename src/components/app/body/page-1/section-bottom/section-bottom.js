@@ -1,7 +1,7 @@
 import React from 'react';
 import RenderImg from '../../../generic-renderer/image/render-image';
 
-let SectionBottom = () => {
+let sectionBottom = () => {
   	return (
 	  	<>
 			<div className="image margin-top-20">
@@ -14,4 +14,4 @@ let SectionBottom = () => {
   );
 }
 
-export default SectionBottom;
+export default sectionBottom;

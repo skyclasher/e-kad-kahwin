@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import Navbar from './navbar';
 import Body from './body';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faEnvelopeOpen, faCalendarAlt, faMobileAlt, faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelopeOpen, faCalendarAlt, faMobileAlt, faMapMarkedAlt, faHeart, faCalendarDay, faClock } from '@fortawesome/free-solid-svg-icons';
 import './app.css';
 import '../../assets/css/bootstrap.min.css';
 
-library.add(faEnvelopeOpen, faCalendarAlt, faMobileAlt, faMapMarkedAlt);
+library.add(faEnvelopeOpen, faCalendarAlt, faMobileAlt, faMapMarkedAlt, faHeart, faCalendarDay, faClock);
 
 // function App() {
 //   return (

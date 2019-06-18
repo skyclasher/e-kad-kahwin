@@ -2,7 +2,7 @@ import React from 'react';
 import './navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'	
 
-export default function Navbar(props) {
+let navbar = (props) => {
   return (
 	<div className="container-fluid">
 		<nav className="navbar navbar-light bg-light fixed-bottom padding-0" style={{width: props.width+"px"}}>
@@ -27,3 +27,4 @@ export default function Navbar(props) {
   );
 }
 
+export default navbar;

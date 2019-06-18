@@ -37,6 +37,8 @@ float: left !important;
 p {
     font-family: "Questrial", Sans-serif;
     font-size: 20px;
+	width: 130%;
+	margin-left: -13%;
 }
 
 .margin-top-20 {
@@ -73,8 +75,8 @@ p {
 .walimatul-font {    
     font-size: 25px;
     font-weight: 100;
-    letter-spacing: 2px;
-    line-height: 50px;
+    letter-spacing: 1px;
+	line-height: 50px;
 }
 
 .margin-top-20 {

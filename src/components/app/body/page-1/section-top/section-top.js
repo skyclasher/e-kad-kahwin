@@ -1,7 +1,7 @@
 import React from 'react';
 import RenderImg from '../../../generic-renderer/image/render-image';
 
-let SectionTop = () => {
+let sectionTop = () => {
   	return (
 	  	<>
 			<div className="image">
@@ -15,5 +15,5 @@ let SectionTop = () => {
   );
 }
 
-export default SectionTop;
+export default sectionTop;
 
