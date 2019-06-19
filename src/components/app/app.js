@@ -8,16 +8,6 @@ import '../../assets/css/bootstrap.min.css';
 
 library.add(faEnvelopeOpen, faCalendarAlt, faMobileAlt, faMapMarkedAlt, faHeart, faCalendarDay, faClock);
 
-// function App() {
-//   return (
-//     <div className="App">
-// 		<Navbar />
-// 		<Body />
-//     </div>
-//   );
-// }
-
-// export default App;
 export default class App extends Component {
 
 	constructor(props) {

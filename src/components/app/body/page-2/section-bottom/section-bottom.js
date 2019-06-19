@@ -15,7 +15,7 @@ let sectionBottom = () => {
 				<p>25 Januari 2020</p>
 				<p>29 Jamadil Awal 1441</p>
 				<FontAwesomeIcon icon="clock" color={"orange"} />
-				<p>11.30 Pagi - 4.00 Petang</p>
+				<p>11.00 Pagi - 4.00 Petang</p>
 				<FontAwesomeIcon icon="map-marked-alt" color={"orange"} />
 				<p>Dewan Kenanga</p>
 				<p>1, Jalan Dengkil 28/21,</p>
