@@ -1,5 +1,5 @@
 .page4 {
-	height: 750px;
+	display: table;
 }
 
 .days-font {
@@ -8,6 +8,11 @@
     font-size: 45px;
     color: #2C7575;
     
+}
+
+.content-center-page4 {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .center-content-page4 {
