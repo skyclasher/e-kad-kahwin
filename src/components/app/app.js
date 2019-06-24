@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import Navbar from './navbar';
 import Body from './body';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faEnvelopeOpen, faCalendarAlt, faMobileAlt, faMapMarkedAlt, faHeart, faCalendarDay, faClock } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelopeOpen, faCalendarAlt, faMobileAlt, faMapMarkedAlt, faHeart, faCalendarDay, faClock, faLocationArrow } from '@fortawesome/free-solid-svg-icons';
+import { faWaze } from '@fortawesome/free-brands-svg-icons'
 import './app.css';
 import '../../assets/css/bootstrap.min.css';
 
-library.add(faEnvelopeOpen, faCalendarAlt, faMobileAlt, faMapMarkedAlt, faHeart, faCalendarDay, faClock);
+library.add(faEnvelopeOpen, faCalendarAlt, faMobileAlt, faMapMarkedAlt, faHeart, faCalendarDay, faClock, faLocationArrow, faWaze);
 
 export default class App extends Component {
 
