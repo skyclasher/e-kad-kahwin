@@ -1,12 +1,169 @@
 import React from 'react';
 import './navbar.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Modal from 'react-bootstrap/Modal'
-import Button from 'react-bootstrap/Button'
-import ButtonToolbar from 'react-bootstrap/ButtonToolbar'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Form from 'react-bootstrap/Form';
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
+import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
+import Table from 'react-bootstrap/Table';
+import AddToCalendarHOC from 'react-add-to-calendar-hoc';
+import Dropdown from './dropdown';
+import { DateTime } from 'luxon';
+import { css } from 'emotion';
+import { Col } from 'react-bootstrap';
+
+const componentStyles = css`
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 0 30px;
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+`;
+
+const linkStyles = css`
+  text-decoration: none;
+  display: block;
+  color: #E42D2D;
+  font-size: 18px;
+  text-align: center;
+  padding: 6px;
+`;
 
 let RenderBodyModal = (props) => {
-	if(props.title === "Lokasi") {
+	if(props.title === "RSVP") {
+		return(	<Form>
+					<Col sm="10">
+						<Form.Group controlId="nama">
+							<Form.Control type="text" placeholder="Nama" />
+						</Form.Group>
+						<Form.Group controlId="telNo">
+							<Form.Control type="text" placeholder="Tel. No" />
+						</Form.Group>
+						<Form.Group controlId="kehadiran">
+							<Form.Label>Kehadiran</Form.Label>
+							<Form.Control as="select">
+							<option>Hadir</option>
+							<option>Tidak Hadir</option>
+							<option>Mungkin</option>
+							</Form.Control>
+  						</Form.Group>
+						<Form.Group controlId="ucapan">
+							<Form.Label>Ucapan</Form.Label>
+							<Form.Control as="textarea" rows="3" />
+						</Form.Group>
+					</Col>
+				
+				</Form>);
+	}else if(props.title === "Kalendar") {
+		const startTime  = DateTime.fromObject({ year: 2020, month: '01', day: 25, hour: 11 });
+		const endTime = startTime.plus({ hours: 5 });
+		const duration = 5;
+		const event = {
+			description: 'Walimatul Urus Sulhi & Anisah',
+			duration,
+			location: 'Dewan MBSA Seksyen 28',
+			title: 'Walimatul Urus Sulhi & Anisah',
+			startDatetime: `${startTime.toFormat('yyyyLLdd')}T${startTime.toFormat('HHmmss')}`,
+			endDatetime: `${endTime.toFormat('yyyyLLdd')}T${endTime.toFormat('HHmmss')}`,
+			timezone: 'Asia/Kuala_Lumpur',
+		}
+		const AddToCalendarDropdown = AddToCalendarHOC(Button, Dropdown);
+		
+		return(<AddToCalendarDropdown
+			buttonText="Simpan Ke Kalendar"
+			className={componentStyles}
+			linkProps={{
+			  className: linkStyles,
+			}}
+			event={event}
+		  />);
+	}else if(props.title === "Hubungi") {
+		return( 
+				<div >
+					<Table responsive striped bordered hover size="sm" >
+						<thead>
+							<tr>
+								<th>Nama</th>
+								<th>Telefon</th>
+								<th>WhatsApp</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Syafiq</td>
+								<td>
+									<a href="tel:+60123456789">
+										<div style={{height: "100%", width: "100%"}}>
+											<FontAwesomeIcon icon="phone-square-alt" /> 
+										</div>
+									</a> 
+								</td>
+								<td>
+									<a href="https://wa.me/60123456789">
+										<div style={{height: "100%", width: "100%"}}>
+											<FontAwesomeIcon icon={['fab', 'whatsapp']} />
+										</div>
+									</a> 
+								</td>
+							</tr>
+							<tr>
+								<td>Syahirah</td>
+								<td>
+									<a href="tel:+60123456789">
+										<div style={{height: "100%", width: "100%"}}>
+											<FontAwesomeIcon icon="phone-square-alt" /> 
+										</div>
+									</a> 
+								</td>
+								<td>
+									<a href="https://wa.me/60123456789">
+										<div style={{height: "100%", width: "100%"}}>
+											<FontAwesomeIcon icon={['fab', 'whatsapp']} />
+										</div>
+									</a> 
+								</td>
+							</tr>
+							<tr>
+								<td>Syazana</td>
+								<td>
+									<a href="tel:+60123456789">
+										<div style={{height: "100%", width: "100%"}}>
+											<FontAwesomeIcon icon="phone-square-alt" /> 
+										</div>
+									</a> 
+								</td>
+								<td>
+									<a href="https://wa.me/60123456789">
+										<div style={{height: "100%", width: "100%"}}>
+											<FontAwesomeIcon icon={['fab', 'whatsapp']} />
+										</div>
+									</a> 
+								</td>
+							</tr>
+							<tr>
+								<td>Sakenah Ahmad</td>
+								<td>
+									<a href="tel:+60123456789">
+										<div style={{height: "100%", width: "100%"}}>
+											<FontAwesomeIcon icon="phone-square-alt" /> 
+										</div>
+									</a> 
+								</td>
+								<td>
+									<a href="https://wa.me/60123456789">
+										<div style={{height: "100%", width: "100%"}}>
+											<FontAwesomeIcon icon={['fab', 'whatsapp']} />
+										</div>
+									</a> 
+								</td>
+							</tr>
+						</tbody>
+					</Table>
+				</div>);
+	}else if(props.title === "Lokasi") {
 		return ( <> 
 					<Button variant="outline-info" href="https://www.waze.com/ul?ll=3.00591690%2C101.56145880&navigate=yes">
 						<FontAwesomeIcon icon={['fab', 'waze']} />  Waze 
