@@ -13,9 +13,9 @@ let sectionMiddle = () => {
 
 		  <div className="parent padding-top-20">
 			  <p>Ali bin Abd Jabar</p>
-			  <p className="parent-modifier">bersama</p>
+			  <p className="parent-modifier">&</p>
 			  <p>Fairuz binti Ahmad</p>
-			  <p className="parent-modifier" style={{lineHeight: "2.5"}}>&</p>
+			  <p className="parent-modifier" style={{lineHeight: "2.5"}}>bersama</p>
 			  <p style={{lineHeight: "1"}}>Anuar bin Mohd. Tamamuddin</p>
 		  </div>
 		  

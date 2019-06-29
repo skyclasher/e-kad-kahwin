@@ -46,7 +46,7 @@
 
 .animatebg {
   overflow: hidden;
-  height: 1150px;
+  height: 1250px;
   position: relative;
   background: linear-gradient(90deg, #ffe0e0, #ffe0ff );
   background-size: 200% 200%;
