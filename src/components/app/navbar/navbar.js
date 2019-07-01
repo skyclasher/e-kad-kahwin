@@ -45,10 +45,14 @@ let RenderBodyModal = (props) => {
 						<Form.Group controlId="kehadiran">
 							<Form.Label>Kehadiran</Form.Label>
 							<Form.Control as="select">
+							<option>Sila Pilih</option>
 							<option>Hadir</option>
 							<option>Tidak Hadir</option>
 							<option>Mungkin</option>
 							</Form.Control>
+  						</Form.Group>
+						<Form.Group controlId="bilKehadiran">
+							<Form.Control type="number" placeholder="Bilangan Kehadiran" />
   						</Form.Group>
 						<Form.Group controlId="ucapan">
 							<Form.Label>Ucapan</Form.Label>

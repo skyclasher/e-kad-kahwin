@@ -2,8 +2,6 @@ import './page-4.css';
 
 import React from 'react';
 import SectionTop from './section-top/section-top';
-import SectionMiddle from './section-middle/section-middle';
-import SectionBottom from './section-bottom/section-bottom';
 
 let page4 = () => {
   return (

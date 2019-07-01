@@ -5,34 +5,34 @@ export default () => (
 		<div style={{border:"5px solid black"}}>
             <Carousel autoPlay infiniteLoop transitionTime={1000} showThumbs={false} showStatus={false}>
                 <div>
-				<img src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" />
+				<img src="/assets/images/sliding/1.jpg" />
 				</div>
 				<div>
-				<img src="http://lorempixel.com/output/cats-q-c-640-480-2.jpg" />
+				<img src="/assets/images/sliding/2.jpg" />
 				</div>
 				<div>
-				<img src="http://lorempixel.com/output/cats-q-c-640-480-3.jpg" />
+				<img src="/assets/images/sliding/3.jpg" style={{transform: "rotate(-90deg)"}} />
 				</div>
 				<div>
-				<img src="http://lorempixel.com/output/cats-q-c-640-480-4.jpg" />
+				<img src="/assets/images/sliding/4.jpg" />
 				</div>
 				<div>
-				<img src="http://lorempixel.com/output/cats-q-c-640-480-5.jpg" />
+				<img src="/assets/images/sliding/5.jpg" />
 				</div>
 				<div>
-				<img src="http://lorempixel.com/output/cats-q-c-640-480-6.jpg" />
+				<img src="/assets/images/sliding/6.jpg" />
 				</div>
 				<div>
-				<img src="http://lorempixel.com/output/cats-q-c-640-480-7.jpg" />
+				<img src="/assets/images/sliding/7.jpg" />
 				</div>
 				<div>
-				<img src="http://lorempixel.com/output/cats-q-c-640-480-8.jpg" />
+				<img src="/assets/images/sliding/8.jpg" />
 				</div>
 				<div>
-				<img src="http://lorempixel.com/output/cats-q-c-640-480-9.jpg" />
+				<img src="/assets/images/sliding/9.jpg" />
 				</div>
 				<div>
-				<img src="http://lorempixel.com/output/cats-q-c-640-480-10.jpg" />
+				<img src="/assets/images/sliding/10.jpg" />
 				</div>
             </Carousel>
 		</div>
