@@ -1,5 +1,6 @@
 import React from 'react';
 import './navbar.css';
+import Rsvp from './rsvp/rsvp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
@@ -32,35 +33,14 @@ const linkStyles = css`
   padding: 6px;
 `;
 
+
+let submit = () => {
+    console.log(this.state.name, this.state.age);
+ }
+
 let RenderBodyModal = (props) => {
 	if(props.title === "RSVP") {
-		return(	<Form>
-					<Col sm="10">
-						<Form.Group controlId="nama">
-							<Form.Control type="text" placeholder="Nama" />
-						</Form.Group>
-						<Form.Group controlId="telNo">
-							<Form.Control type="text" placeholder="Tel. No" />
-						</Form.Group>
-						<Form.Group controlId="kehadiran">
-							<Form.Label>Kehadiran</Form.Label>
-							<Form.Control as="select">
-							<option>Sila Pilih</option>
-							<option>Hadir</option>
-							<option>Tidak Hadir</option>
-							<option>Mungkin</option>
-							</Form.Control>
-  						</Form.Group>
-						<Form.Group controlId="bilKehadiran">
-							<Form.Control type="number" placeholder="Bilangan Kehadiran" />
-  						</Form.Group>
-						<Form.Group controlId="ucapan">
-							<Form.Label>Ucapan</Form.Label>
-							<Form.Control as="textarea" rows="3" />
-						</Form.Group>
-					</Col>
-				
-				</Form>);
+		return(	<Rsvp isSubmit={props.isSubmit} toggleSubmitForm={props.toggleSubmitForm} isClose={props.isClose}/>);
 	}else if(props.title === "Kalendar") {
 		const startTime  = DateTime.fromObject({ year: 2020, month: '01', day: 25, hour: 11 });
 		const endTime = startTime.plus({ hours: 5 });
@@ -182,6 +162,14 @@ let RenderBodyModal = (props) => {
 }
 
 class RenderModal extends React.Component {
+	constructor(...args) {
+	  super(...args);
+  
+	  this.state = { isSubmit: false};
+	}
+
+	toggleSubmitForm = () => this.setState({ isSubmit: !this.state.isSubmit });
+
 	render() {
 	  return (
 		<Modal
@@ -197,10 +185,11 @@ class RenderModal extends React.Component {
 		  </Modal.Header>
 		  <Modal.Body className="d-block">
 				<div className="text-center">
-					<RenderBodyModal title={this.props.title} />
+					<RenderBodyModal title={this.props.title} toggleSubmitForm={this.toggleSubmitForm}  isClose={this.props.onHide} isSubmit={this.state.isSubmit}/>
 				</div>
 		  </Modal.Body>
 		  <Modal.Footer>
+			<Button variant="success" onClick={this.toggleSubmitForm}>Submit</Button>
 			<Button onClick={this.props.onHide}>Close</Button>
 		  </Modal.Footer>
 		</Modal>
