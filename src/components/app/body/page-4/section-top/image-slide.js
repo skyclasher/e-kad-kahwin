@@ -3,7 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 export default () => (
 		<div style={{border:"5px solid black"}}>
-            <Carousel autoPlay infiniteLoop transitionTime={1000} showThumbs={false} showStatus={false} style={{maxHeight: "281px", width: "auto"}}>
+            <Carousel autoPlay dynamicHeight infiniteLoop transitionTime={1000} showThumbs={false} showStatus={false}>
                 <div>
 				<img src="/assets/images/sliding/1.jpg" />
 				</div>
@@ -11,7 +11,7 @@ export default () => (
 				<img src="/assets/images/sliding/2.jpg" />
 				</div>
 				<div>
-				<img src="/assets/images/sliding/3.jpg" style={{maxHeight: "281px", width: "auto"}} />
+				<img src="/assets/images/sliding/3.jpg"  />
 				</div>
 				<div>
 				<img src="/assets/images/sliding/4.jpg" />

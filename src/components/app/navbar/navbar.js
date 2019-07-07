@@ -171,6 +171,11 @@ class RenderModal extends React.Component {
 	toggleSubmitForm = () => this.setState({ isSubmit: !this.state.isSubmit });
 
 	render() {
+		let submitBtn;
+		if(this.props.title == "RSVP")
+		{
+			submitBtn = <Button variant="success" onClick={this.toggleSubmitForm}>Submit</Button>;
+		}
 	  return (
 		<Modal
 		  {...this.props}
@@ -189,7 +194,7 @@ class RenderModal extends React.Component {
 				</div>
 		  </Modal.Body>
 		  <Modal.Footer>
-			<Button variant="success" onClick={this.toggleSubmitForm}>Submit</Button>
+			{submitBtn}
 			<Button onClick={this.props.onHide}>Close</Button>
 		  </Modal.Footer>
 		</Modal>
