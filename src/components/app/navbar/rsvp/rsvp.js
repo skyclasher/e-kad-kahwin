@@ -6,7 +6,7 @@ import axios from 'axios';
 class Rsvp extends React.Component {
 	constructor(props){
         super(props);
-        this.state={email: '', nama: '', telNo: '', kehadiran: '', bilKehadiran: '', ucapan: '', attOpts: [{value: '', display: 'Sila Pilih'},{value: 'H', display: 'Hadir'},{value: 'T', display: 'Tidak Hadir'},{value: 'M', display: 'Mungkin'} ]};
+        this.state={email: '', nama: '', telNo: '',officeTelNo: '', kehadiran: '', bilKehadiran: '', ucapan: '', attOpts: [{value: '', display: 'Sila Pilih'},{value: 'H', display: 'Hadir'},{value: 'T', display: 'Tidak Hadir'},{value: 'M', display: 'Mungkin'} ]};
         this.handleChange = this.handleChange.bind(this);
         this.handleEmailInput = this.handleEmailInput.bind(this);
 		this.submit = this.submit.bind(this);
@@ -54,7 +54,7 @@ class Rsvp extends React.Component {
    }
 
     submit(){
-        if(this.state.email == "" || this.state.nama == "" || this.state.kehadiran == "")
+        if(this.state.email == "" || this.state.nama == "" || this.state.kehadiran == "" || this.state.officeTelNo !== "")
             return false;
 
         let closeModal = this.props.isClose;
@@ -92,7 +92,7 @@ class Rsvp extends React.Component {
                 <Form.Group controlId="telNo">
                     <Form.Control name="telNo" type="text" placeholder="Tel. No" value={this.state.telNo} onChange={this.handleChange.bind(this)} autoComplete="new-password" />
                 </Form.Group>
-				<input type="text" name="office_TelNo" value="1" style={{display: "none"}} tabIndex="-1" onChange={this.handleChange.bind(this)}  autoComplete="new-password"></input>
+				<input type="text" name="officeTelNo" value="1" style={{display: "none"}} tabIndex="-1" onChange={this.handleChange.bind(this)}  autoComplete="new-password"></input>
                 <Form.Group controlId="kehadiran">
                     <Form.Label>Kehadiran</Form.Label>
                     <Form.Control as="select" name="kehadiran" value={this.state.kehadiran} onChange={this.handleChange.bind(this)} autoComplete="new-password">

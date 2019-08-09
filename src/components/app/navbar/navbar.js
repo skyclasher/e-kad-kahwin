@@ -77,16 +77,16 @@ let RenderBodyModal = (props) => {
 						</thead>
 						<tbody>
 							<tr>
-								<td>Syafiq</td>
+								<td>Ahmad Syafiq</td>
 								<td>
-									<a href="tel:+60123456789">
+									<a href="tel:+60123664775">
 										<div style={{height: "100%", width: "100%"}}>
 											<FontAwesomeIcon icon="phone-square-alt" /> 
 										</div>
 									</a> 
 								</td>
 								<td>
-									<a href="https://wa.me/60123456789">
+									<a href="https://wa.me/60123664775">
 										<div style={{height: "100%", width: "100%"}}>
 											<FontAwesomeIcon icon={['fab', 'whatsapp']} />
 										</div>
@@ -94,16 +94,16 @@ let RenderBodyModal = (props) => {
 								</td>
 							</tr>
 							<tr>
-								<td>Syahirah</td>
+								<td>Adlin Syahirah</td>
 								<td>
-									<a href="tel:+60123456789">
+									<a href="tel:+60199917193">
 										<div style={{height: "100%", width: "100%"}}>
 											<FontAwesomeIcon icon="phone-square-alt" /> 
 										</div>
 									</a> 
 								</td>
 								<td>
-									<a href="https://wa.me/60123456789">
+									<a href="https://wa.me/60199917193">
 										<div style={{height: "100%", width: "100%"}}>
 											<FontAwesomeIcon icon={['fab', 'whatsapp']} />
 										</div>
@@ -111,16 +111,16 @@ let RenderBodyModal = (props) => {
 								</td>
 							</tr>
 							<tr>
-								<td>Syazana</td>
+								<td>Adlin Syazana</td>
 								<td>
-									<a href="tel:+60123456789">
+									<a href="tel:+60173959764">
 										<div style={{height: "100%", width: "100%"}}>
 											<FontAwesomeIcon icon="phone-square-alt" /> 
 										</div>
 									</a> 
 								</td>
 								<td>
-									<a href="https://wa.me/60123456789">
+									<a href="https://wa.me/60173959764">
 										<div style={{height: "100%", width: "100%"}}>
 											<FontAwesomeIcon icon={['fab', 'whatsapp']} />
 										</div>
@@ -130,14 +130,14 @@ let RenderBodyModal = (props) => {
 							<tr>
 								<td>Sakenah Ahmad</td>
 								<td>
-									<a href="tel:+60123456789">
+									<a href="tel:+60122006153">
 										<div style={{height: "100%", width: "100%"}}>
 											<FontAwesomeIcon icon="phone-square-alt" /> 
 										</div>
 									</a> 
 								</td>
 								<td>
-									<a href="https://wa.me/60123456789">
+									<a href="https://wa.me/60122006153">
 										<div style={{height: "100%", width: "100%"}}>
 											<FontAwesomeIcon icon={['fab', 'whatsapp']} />
 										</div>
