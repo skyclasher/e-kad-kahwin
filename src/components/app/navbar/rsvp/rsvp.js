@@ -39,7 +39,7 @@ class Rsvp extends React.Component {
 
     handleEmailInput() {
         if(this.state.email != null){
-            axios.get(`${process.env.REACT_APP_HOST_URL}/api/Rsvp/GetByEmail/${this.state.email}`)
+            axios.get(`${process.env.REACT_APP_HOST_URL}/api/Rsvp/GetByEmailAndECardId/${this.state.email}/${this.cardDetailId}`)
                 .then(res => {
                     if(res.data !== null) {
                         const data = res.data;
