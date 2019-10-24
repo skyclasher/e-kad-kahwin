@@ -7,7 +7,7 @@ import './countdown/ionicons.css';
 import './countdown/jquery.classycountdown.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-let dateDiffSec = () => Math.abs(((new Date(2020, 1, 25, 11, 0, 0, 0).getTime()) -  new Date().getTime()) / 1000);
+let dateDiffSec = () => Math.abs(((new Date(2020, 0, 25, 11, 0, 0, 0)) -  new Date()) / 1000);
 
 let dataAttrs = {
     'data-remaining-sec': dateDiffSec()
